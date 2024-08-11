@@ -32,4 +32,4 @@ brew install nvim
 ```
 
 ```bash
-git clone https://github.com/dialmonsalve/nvim-config.git ~/.config/nvim && nvim
+git clone https://github.com/dialmonsalve/nvim.git ~/.config/nvim && nvim
