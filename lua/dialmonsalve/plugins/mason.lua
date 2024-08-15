@@ -47,7 +47,8 @@ return {
 				"isort", -- python formatter
 				"black", -- python formatter
 				"pylint",
-				"standardjs",
+				--"standardjs",
+				"eslint_d",
 				"phpcs",
 			},
 		})

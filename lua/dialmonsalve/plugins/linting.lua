@@ -7,10 +7,10 @@ return {
 			events = { "BufWritePost", "BufReadPost", "InsertLeave" },
 			linters_by_ft = {
 				fish = { "fish" },
-				javascript = { "standardjs" },
-				typescript = { "standardjs" },
-				javascriptreact = { "standardjs" },
-				typescriptreact = { "standardjs" },
+				javascript = { "eslint_d" },
+				typescript = { "eslint_d" },
+				javascriptreact = { "eslint_d" },
+				typescriptreact = { "eslint_d" },
 				python = { "pylint" },
 				php = { "phpcs" },
 				-- Use the "*" filetype to run linters on all filetypes.
