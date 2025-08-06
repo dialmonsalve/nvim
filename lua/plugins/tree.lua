@@ -1,12 +1,14 @@
-return {{
+return {
+  {
     "nvim-tree/nvim-tree.lua",
     version = "*",
     lazy = false,
-    dependencies = {"nvim-tree/nvim-web-devicons"},
+    dependencies = { "nvim-tree/nvim-web-devicons" },
     opts = function()
-        return require("configs.nvimtree")
+      return require("configs.nvimtree")
     end,
     config = function(_, opts)
-        require("nvim-tree").setup(opts)
-    end
-}}
+      require("nvim-tree").setup(opts)
+    end,
+  },
+}

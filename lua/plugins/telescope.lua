@@ -1,11 +1,13 @@
-return {{
+return {
+  {
     "nvim-telescope/telescope.nvim",
     tag = "0.1.8",
-    dependencies = {"nvim-lua/plenary.nvim"},
+    dependencies = { "nvim-lua/plenary.nvim" },
     opts = function()
-        return require("configs.telescope")
-    end
+      return require("configs.telescope")
+    end,
     -- function(_,opts)
     --	    require("telescope").setup(opts)
     --  end
-}}
+  },
+}
