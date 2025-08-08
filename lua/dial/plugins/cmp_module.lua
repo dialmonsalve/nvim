@@ -12,7 +12,7 @@ return {
       "rafamadriz/friendly-snippets",
     },
     opts = function()
-      return require("configs.nvim-cmp")
+      return require("dial.configs.nvim-cmp")
     end,
     config = function()
       local cmp = require("cmp")
