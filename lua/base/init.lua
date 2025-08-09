@@ -42,3 +42,5 @@ require("lazy").setup(configs, lazy_opts)
 require("dial.keymaps")
 
 vim.notify("Welcome back dialmonsalve")
+-- En tu init.lua o archivo de configuración principal
+--require("lazyvim.util").pick = require("lazyvim.util").pick or {}
