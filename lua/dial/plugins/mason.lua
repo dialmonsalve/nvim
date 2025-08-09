@@ -24,7 +24,7 @@ return {
 
       mason_lspconfig.setup({
         ensure_installed = {
-          "tsserver",
+          "ts_ls",
           "html",
           "cssls",
           "tailwindcss",
@@ -51,7 +51,7 @@ return {
 
       vim.api.nvim_create_user_command("MasonInstallAll", function()
         local servers = {
-          "tsserver", "html", "cssls", "tailwindcss", "lua_ls",
+          "ts_ls", "html", "cssls", "tailwindcss", "lua_ls",
           "emmet_ls", "pyright", "rust_analyzer", "intelephense", "astro"
         }
         if #servers > 0 then
@@ -60,7 +60,7 @@ return {
       end, {})
       
       vim.g.mason_binaries_list = {
-        "tsserver", "html", "cssls", "tailwindcss", "lua_ls",
+        "ts_ls", "html", "cssls", "tailwindcss", "lua_ls",
         "emmet_ls", "pyright", "rust_analyzer", "intelephense", "astro"
       }
     end,
