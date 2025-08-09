@@ -2,7 +2,7 @@ return {
   "folke/tokyonight.nvim",
   priority = 1000,
   config = function()
-    local transparent = true
+    local transparent = false
     local bg = "#1C2227"
     local bg_dark = "#011423"
     local bg_highlight = "#143652"
@@ -29,7 +29,7 @@ return {
         sidebars = transparent and "transparent" or "dark",
         floats = transparent and "transparent" or "dark",
         keywords = { italic = true },
-        comments = { reverse = true, bold = false },
+        comments = { italic = true, bold = false },
         functions = { italic = true },
         variables = { italic = true, bold = true },
       },

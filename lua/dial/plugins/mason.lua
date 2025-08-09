@@ -40,9 +40,9 @@ return {
       mason_tool_installer.setup({
         ensure_installed = {
           "prettier",
-          "stylua", 
-          "isort", 
-          "black", 
+          "stylua",
+          "isort",
+          "black",
           "pylint",
           "eslint_d",
           "phpcs",
@@ -51,17 +51,33 @@ return {
 
       vim.api.nvim_create_user_command("MasonInstallAll", function()
         local servers = {
-          "ts_ls", "html", "cssls", "tailwindcss", "lua_ls",
-          "emmet_ls", "pyright", "rust_analyzer", "intelephense", "astro"
+          "ts_ls",
+          "html",
+          "cssls",
+          "tailwindcss",
+          "lua_ls",
+          "emmet_ls",
+          "pyright",
+          "rust_analyzer",
+          "intelephense",
+          "astro",
         }
         if #servers > 0 then
           vim.cmd("MasonInstall " .. table.concat(servers, " "))
         end
       end, {})
-      
+
       vim.g.mason_binaries_list = {
-        "ts_ls", "html", "cssls", "tailwindcss", "lua_ls",
-        "emmet_ls", "pyright", "rust_analyzer", "intelephense", "astro"
+        "ts_ls",
+        "html",
+        "cssls",
+        "tailwindcss",
+        "lua_ls",
+        "emmet_ls",
+        "pyright",
+        "rust_analyzer",
+        "intelephense",
+        "astro",
       }
     end,
   },
